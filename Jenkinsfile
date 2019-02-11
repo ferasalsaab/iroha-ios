@@ -1,5 +1,6 @@
 node('mac_for_ios') {
   scmVars = checkout scm
+<<<<<<< HEAD
   grpc = "protoc-gen-objcgrpc"
   withEnv(['IROHA_PATH=iroha',
           'SCHEMA_PATH=Schema',
@@ -40,3 +41,16 @@ node('mac_for_ios') {
 } //end node
 
 
+=======
+  try {
+    echo "kaef"
+    currentBuild.result = 'SUCCESS'
+  } // end try
+  catch(Exception e) {
+    currentBuild.result = 'FAILURE'
+  } // end catch
+  finally {
+    cleanWs()
+  } // end finally
+} //end node
+>>>>>>> Initial commit

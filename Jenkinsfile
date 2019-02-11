@@ -43,7 +43,9 @@ node('mac_for_ios') {
 
 =======
   try {
-    echo "kaef"
+      stage('build') {
+          sh './lib-build.sh'
+      }
     currentBuild.result = 'SUCCESS'
   } // end try
   catch(Exception e) {

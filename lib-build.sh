@@ -17,7 +17,7 @@ PROTO_GEN="ProtoGen"
 
 [ -d $IROHA_PATH ] && rm -rf $IROHA_PATH
 
-git clone -b dev --depth=1 https://github.com/hyperledger/iroha
+git clone -b develop --depth=1 https://github.com/hyperledger/iroha
 
 [ -d $SCHEMA_PATH ] && rm -rf $SCHEMA_PATH
 mkdir $SCHEMA_PATH

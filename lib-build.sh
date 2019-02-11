@@ -29,6 +29,6 @@ mkdir $PROTO_GEN
 
 grpc_path=$(command -v $grpc)
 protoc --plugin=protoc-gen-grpc=$grpc_path --objc_out=${PROTO_GEN} --grpc_out=${PROTO_GEN} --proto_path=./${SCHEMA_PATH}/proto ./${SCHEMA_PATH}/proto/*.proto
-
+echo "12341234"
 [ -d $IROHA_PATH ] && rm -rf $IROHA_PATH
 [ -d $SCHEMA_PATH ] && rm -rf $SCHEMA_PATH
